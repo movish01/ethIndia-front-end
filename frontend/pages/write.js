@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Write() {
+  const [title, setTitle] =  useState('');
+  const [load, setLoad] = useState('')
+  const [reps, setReps] = useState('')
   return (
     <div>
       <div className="text-2xl ml-14 mr-14 font-bold text-purple-500">

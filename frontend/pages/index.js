@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import NewsDetails from "./news/news-details";
 
 export default function Home() {
   return (
@@ -38,10 +39,10 @@ export default function Home() {
       </div>
       <div className="flex gap-4 flex-col ml-12 mr-12 h-96">
         <span className="text-4xl font-bold text-purple-500">
-          <Link href="./topics/science">All News</Link>
+          <Link href="/">All News</Link>
         </span>
         <div className="flex gap-4 flex-row">
-          <div className="border-4 border-purple-300 rounded-lg basis-1/4"></div>
+          <div className="border-4 border-purple-300 rounded-lg basis-1/4 news"></div>
           <div className="border-4 border-purple-300 rounded-lg basis-1/4"></div>
         </div>
       </div>

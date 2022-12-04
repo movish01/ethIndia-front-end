@@ -4,11 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
 
-const connectMetamask = async () => {
-  const provider = new ethers.providers.Web3Provider(window.ethereum);
-  const account = await provider.send("eth_requestAccounts", []);
-};
-
 function MyApp({ Component, pageProps }) {
   const [clientWindowHeight, setClientWindowHeight] = useState("");
 
@@ -77,12 +72,7 @@ function MyApp({ Component, pageProps }) {
               >
                 Support Us
               </label>
-              <button
-                onClick={async () => connectMetamask()}
-                className="btn btn-primary"
-              >
-                Connect Wallet
-              </button>
+              <button className="btn btn-primary">Connect Wallet</button>
             </div>
           </div>
         </div>
